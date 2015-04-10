@@ -9,7 +9,7 @@ The first differences of annual global surface air temperatures in Celsius from 
 }
 \usage{data(globtemp)}
 \format{
-  A matrix containing 106 observations. The first column is the time from 1880-1985. The second column is the first difference of annual global surface air temperature in celsius. 
+  A time series data with 106 observations from 1880 through 1985.
 }
 \details{
 The first differences of the annual global surface air temperatures in Celsius from 1880 through 1985.
@@ -18,7 +18,7 @@ The first differences of the annual global surface air temperatures in Celsius f
 \url{http://datamarket.com/data/set/22ku/annual-changes-in-global-temperature-1880-1985#!ds=22ku&display=line}
 }
 \seealso{
- \code{\link{qn}}  \code{\link{ma.filter}}
+ \code{\link{qn}}  \code{\link{ma.filter}}  \code{\link{ss.filter}}
 }
 \examples{
 data(globtemp)

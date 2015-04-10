@@ -1,15 +1,12 @@
-qn <-
-function(x, data = NULL, na.action = na.fail)  
+qn <- function(x)  
 { 
-  if (!is.null(data))
-    x <- as.vector(na.action(data$x))
-  else 
-    x <- as.vector(na.action(x))
-  if (is.matrix(x))
-    stop("only univariate series are allowed")
-  n <- as.integer(length(x))
-  if (is.na(n)) 
-    stop("invalid length(x)")
+  if (NCOL(x) > 1)
+    stop("'x' must be a numeric or univariate time series")
+  if (any(!is.finite(x)))
+    stop("missing values are not allowed")
+  n <- length(x)
+  if (n < 1L)
+    stop("invalid length of 'x'") 
   xn <- (1:n)/n 
   lm.fit <- lm(x ~ 1 + xn + I(xn^2) + I(xn^3))
   denominator <- 4*(lm.fit[[1]][3])^2 + 12*lm.fit[[1]][3]*
@@ -17,4 +14,5 @@ function(x, data = NULL, na.action = na.fail)
   q.n <- as.integer(floor((n)^(4/5)*(9/2)^(1/5)*
                             ((var(resid(lm.fit))/denominator)^(1/5))))
   qn <- ifelse(q.n < n, as.integer(min(q.n, n - q.n)), floor(n^(4/5)/2))
+  return(qn)
 }
