@@ -1,11 +1,11 @@
-cdd0b4101a70928f5944d331e3c2b651 *DESCRIPTION
+4cb5ec3379a114b2f21bd0137ab6a1e5 *DESCRIPTION
 df390c53434517b304ac5db487184641 *NAMESPACE
-4b08c2a76a62c22cf44777167dcffc82 *R/mafilter.R
+ee51d7c53b7f2b3a303f186cad69d0a8 *R/mafilter.R
 e6c19ef1511fec76b4c5e312ecff7783 *R/qn.R
-795c33891a2618c64b73e86f58b3b1bb *R/ssfilter.R
+966e4013e94373129f75a7488b2aec5e *R/ssfilter.R
 53267c2e7634f90e1dec52b19d89343a *data/globtemp.rda
 4f33fbf18a9711af871f5caa3d330519 *man/globtemp.Rd
 4286dd7b0ff034c4d9f607e93ad1d227 *man/ma.filter.Rd
 352cf254a83d278327633f2cd50bd824 *man/qn.Rd
-906bdff0f15b19fe07973c8cbf190d7e *man/rmaf-package.Rd
+769a1cc9d31cc231412f6af781a02c70 *man/rmaf-package.Rd
 1ff8991a099b13b9c748b0f76535cdf0 *man/ss.filter.Rd

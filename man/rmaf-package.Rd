@@ -12,8 +12,8 @@ A refined moving average filter using the optimal and data-driven moving average
 \tabular{ll}{
 Package: \tab rmaf\cr
 Type: \tab Package\cr
-Version: \tab 2.0\cr
-Date: \tab 2014-03-05\cr
+Version: \tab 3.0.1\cr
+Date: \tab 2015-04-14\cr
 License: \tab GPL (>= 2)\cr
 }
 This package contains a function to determine the optimal and data-driven moving average lag \eqn{q}, and two functions to estimate the trend, seasonal component and irregularity for univariate time series.  A dataset of the first differences of annual global surface air temperatures in Celsius from 1880 through 1985 is also included in the package for illustrating the trend estimation. 
